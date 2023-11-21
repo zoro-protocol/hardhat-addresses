@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/zoro-protocol/hardhat-addresses",
   "devDependencies": {
+    "@types/lodash": "^4.14.202",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
     "eslint": "^8.46.0",
@@ -38,5 +39,8 @@
   },
   "peerDependencies": {
     "hardhat": "^2.17.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
