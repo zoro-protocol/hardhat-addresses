@@ -1,0 +1,42 @@
+{
+  "name": "@zoroprotocol/hardhat-addresses",
+  "version": "1.0.0",
+  "description": "Hardhat plugin that extends the Hardhat Runtime Environment with functions to manage contract addresses",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zoro-protocol/hardhat-addresses.git"
+  },
+  "keywords": [
+    "ethereum",
+    "smart-contracts",
+    "hardhat",
+    "hardhat-plugin"
+  ],
+  "author": "Zoro Protocol <enzo@zoroprotocol.com> (https://zoroprotocol.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoro-protocol/hardhat-addresses/issues"
+  },
+  "homepage": "https://github.com/zoro-protocol/hardhat-addresses",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.10.0",
+    "prettier": "3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "hardhat": "^2.17.1"
+  }
+}
