@@ -1,5 +1,5 @@
 import path from "path";
-import { existsSync, readFileSync, writeFileSync } from "fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "fs";
 import _ from "lodash";
 import { getChainId } from "./utils";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
@@ -56,5 +56,7 @@ export function recordAddress(
   const updatedAddresses: AddressConfig = _.merge(addresses, newAddresses);
 
   const newJson: string = JSON.stringify(updatedAddresses, null, 2);
+
+  mkdirSync(path.dirname(addressesPath));
   writeFileSync(addressesPath, newJson);
 }
