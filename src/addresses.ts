@@ -9,10 +9,11 @@ export const DEFAULT_ADDRESSES_PATH = "addresses";
 export const DEFAULT_ADDRESSES_FILE = "main";
 
 function getPath(hre: HardhatRuntimeEnvironment, file: string): string {
-  if (path.isAbsolute(file)) {
-    return file;
+  const jsonFile = path.format({ ...path.parse(file), base: "", ext: ".json" });
+  if (path.isAbsolute(jsonFile)) {
+    return jsonFile;
   } else {
-    return path.normalize(path.join(hre.config.paths.addresses, file));
+    return path.normalize(path.join(hre.config.paths.addresses, jsonFile));
   }
 }
 
