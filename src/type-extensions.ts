@@ -13,7 +13,7 @@ declare module "hardhat/types/config" {
 
 declare module "hardhat/types/runtime" {
   export interface HardhatRuntimeEnvironment {
-    recordAddress: (path: string, name: string, address: string) => void;
-    getAddress: (path: string, name: string) => string;
+    recordAddress: (file: string, name: string, address: string) => void;
+    getAddress: (file: string, name: string) => string;
   }
 }
