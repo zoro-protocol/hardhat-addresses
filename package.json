@@ -1,6 +1,6 @@
 {
   "name": "@zoroprotocol/hardhat-addresses",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hardhat plugin that extends the Hardhat Runtime Environment with functions to manage contract addresses",
   "main": "dist/index.js",
   "scripts": {
