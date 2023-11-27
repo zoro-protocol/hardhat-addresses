@@ -3,6 +3,7 @@ import { extendConfig, extendEnvironment } from "hardhat/config";
 import { lazyFunction } from "hardhat/plugins";
 import { DEFAULT_ADDRESSES_PATH, getAddress, recordAddress } from "./addresses";
 import { HardhatConfig, HardhatRuntimeEnvironment, HardhatUserConfig } from "hardhat/types";
+import "./type-extensions";
 
 extendConfig((config: HardhatConfig, userConfig: Readonly<HardhatUserConfig>) => {
   const addressesPath: string | undefined = userConfig.paths?.addresses;
