@@ -58,7 +58,7 @@ export function recordAddress(
   const newJson: string = JSON.stringify(updatedAddresses, null, 2);
 
   const addressesDir = path.dirname(addressesPath);
-  if (existsSync(addressesDir)) {
+  if (!existsSync(addressesDir)) {
     mkdirSync(addressesDir, { recursive: true });
   }
 
